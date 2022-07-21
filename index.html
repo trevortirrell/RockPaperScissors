@@ -4,9 +4,30 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">  
     <title>Rock Paper Scissors</title>
 </head>
 <body>
-    
+    <script src="app.js"></script>
+
+    <h1>Rock, Paper, Scissors</h1>
+    <h4>Make your selection</h4>
+    <div>
+        <input class="radio" type="radio" name="userChoice" value="Rock" id="rock">
+        <label for="rock">Rock</label>
+    </div>
+    <div>
+        <input class="radio" type="radio" name="userChoice" value="Paper" id="paper">
+        <label for="paper">Paper</label>
+    </div>
+    <div>
+        <input class="radio" type="radio" name="userChoice" value="Scissors" id="scissors">
+        <label for="scissors">Scissors</label>
+    </div>
+    <button id="submitButton" onclick="submit()">Submit</button>
+        
+    <p id="bestOf"></p>
+    <p id="results"></p>
+    <!-- <button id="againButton" onclick="again()" hidden="true">Again</button> -->
 </body>
 </html>
